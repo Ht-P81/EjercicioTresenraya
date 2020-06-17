@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estado botón pulsado-->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#de5bd2"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+    </item>
+
+    <!-- Estado botón desactivado, cuando ya se ha selccionado la partida
+    los botones se quedan desactivados para que el usuario no los pulse por error
+    mientras esté jugando la partida.-->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#303f8f"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+    </item>
+
+    <!-- Estado reposo-->
+    <!-- este va a ser la apariencia de mi botón en el estado de reposo,
+    por tanto debe ir en último lugar si el boton va a tener varios estados -->
+    <item>
+        <shape>
+            <gradient android:startColor="#ddbfdf"
+                android:endColor="#2c26da"
+                android:angle="270"/>
+            <corners android:radius="@dimen/radio_boton"/>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.NoActionBar.Fullscreen">
+        <!-- Customize your theme here. PARA LOS COLORES DEL THEME, TEMA, DISEÑO -->
+    </style>
+
+    <!-- AQUÍ ES PARA EL RESTO DE ELEMENTOS, FUERA DE STYLE Y DENTRO DE RESOURCES-->
+    <style name="titulo">
+        <!-- Aquí estableceremos las características de diseño del título dentro de las etiquetas style -->
+        <!-- Que el ancho se adapte al contenido. -->
+        <item name="android:layout_width">wrap_content</item>
+        <!-- Que el alto se adapte al contenido. -->
+        <item name="android:layout_height">wrap_content</item>
+        <!-- Para el tamaño del contenido del texto, vemos como ya estaba definido en nuesto dimens.xml -->
+        <item name="android:textSize">@dimen/texto_titulo</item>
+    </style>
+
+    <!--Elemento boton-->
+    <style name="boton">
+        <!-- Aquí estableceremos las características de diseño de los botones dentro de las etiquetas style -->
+        <!-- Que el ancho se adapte al contenido. -->
+        <item name="android:layout_width">wrap_content</item>
+        <!-- Establecemos el ancho mínimo. -->
+        <item name="android:minWidth">@dimen/ancho_min_boton</item>
+        <!-- Que el alto se adapte al contenido. -->
+        <item name="android:layout_height">wrap_content</item>
+        <!-- Establecemos el alto mínimo. -->
+        <item name="android:minHeight">@dimen/alto_min_boton</item>
+        <!-- Establecemos el margen de los botones. -->
+        <item name="android:layout_margin">@dimen/margen_boton</item>
+        <!-- Establecemos el texto de los botones. -->
+        <item name="android:textSize">@dimen/texto_boton</item>
+        <!-- Establecemos color de fondo de los botones. -->
+        <item name="android:background">@drawable/boton</item>
+        <!-- Establecemos el evento para que el boton esté a la escucha. -->
+        <!-- Entre los corchetes debemos poner el nombre de la función a la que este botón llamará -->
+        <item name="android:onClick">aJugar</item>
+    </style>
+
+    <!--Elemento botones de radio, los de los niveles de dificultad-->
+    <style name="radio">
+        <!-- Transparencia, la opacidad con la que se muestre -->
+        <!-- Que el ancho se adapte al contenido. -->
+        <item name="android:layout_width">wrap_content</item>
+        <!-- Que el alto se adapte al contenido. -->
+        <item name="android:layout_height">wrap_content</item>
+        <!-- Establecemos el texto de los botones. -->
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <!-- Transparencia, la opacidad con la que se muestre -->
+        <item name="android:alpha">0.8</item>
+    </style>
+
+    <!--Elemento casilla, recordad que hay tres tipos, en blanco, con circulos y con equis-->
+    <!-- Establecemos diseño de la casilla en blanco -->
+    <style name="casilla">
+        <!-- Que el ancho establecido en el dimens casilla. -->
+        <item name="android:layout_width">@dimen/casilla</item>
+        <!-- Que el alto establecido en el dimens casilla. -->
+        <item name="android:layout_height">@dimen/casilla</item>
+        <!-- Con esta etiqueta le decimos donde está la imagen de esta casilla -->
+        <item name="android:src">@drawable/casilla</item>
+        <!-- Padding es la distancia del borde de ese contenedor hacia dentro, hacia lo que haya -->
+        <!-- Margin es la distancia del borde de ese contenedor hacia afuera, hacia lo que haya -->
+        <item name="android:layout_margin">2dp</item>
+        <!-- Debemos establecer un evento para esta casilla -->
+        <item name="android:onClick">toque</item>
+    </style>
+
+</resources>
